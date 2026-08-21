@@ -38,8 +38,8 @@ content:
         type: string
       - name: hero_image
         label: Featured product image
-        type: image
-        description: Use a full https image URL or an uploaded /media path.
+        type: string
+        description: Paste a full https image URL or an uploaded /media path.
       - name: contact_intro
         label: Contact introduction
         type: text
@@ -110,8 +110,8 @@ content:
         type: string
       - name: image
         label: Product image
-        type: image
-        description: Use a full https image URL or an uploaded /media path.
+        type: string
+        description: Paste a full https image URL or an uploaded /media path.
       - name: url
         label: Product detail URL
         type: string

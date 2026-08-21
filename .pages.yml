@@ -108,6 +108,20 @@ content:
       - name: focus
         label: Product focus tag
         type: string
+      - name: image
+        label: Product photo
+        type: image
+        required: true
+        description: Upload an approved product image or gameplay screenshot. Do not use initials or unrelated stock images.
+      - name: image_alt
+        label: Product photo description
+        type: string
+        required: true
+        description: Describe what is shown for accessibility and search engines.
+      - name: video_url
+        label: YouTube gameplay URL
+        type: string
+        description: Optional. Only use an official or approved YouTube video URL.
       - name: published
         label: Show on website
         type: boolean

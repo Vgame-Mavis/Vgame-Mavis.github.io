@@ -1,8 +1,8 @@
 const fallbackProducts = [
-  { title: 'Fatal Harpoon', category: 'fish', series: 'FISH SERIES', players: '2–10 Players', summary: 'An ocean-themed multi-player system for early-stage product and venue discussions.', focus: 'Multi-player format', published: true },
-  { title: 'Bird’s Paradise 2 USA', category: 'bird', series: 'BIRD SERIES', players: '4–10 Players', summary: 'A bird-themed entertainment system presented for configuration and market inquiries.', focus: 'Theme-led experience', published: true },
-  { title: 'Insect Doctor', category: 'insect', series: 'INSECT SERIES', players: '4–10 Players', summary: 'A character-driven insect theme for commercial amusement project conversations.', focus: 'Character theme', published: true },
-  { title: 'Insect Pirates', category: 'insect', series: 'INSECT SERIES', players: '4–10 Players', summary: 'A multi-player insect adventure concept for venue and integration discussions.', focus: 'Project configuration', published: true }
+  { title: 'Fatal Harpoon', category: 'fish', series: 'FISH SERIES', players: '2–10 Players', summary: 'A fast-paced ocean-themed multiplayer arcade system featuring colorful marine targets, special effects, and configurable setups for commercial venue projects.', focus: 'Ocean action system', image: 'product-fatal-harpoon.jpg', image_alt: 'Fatal Harpoon multiplayer ocean arcade gameplay', video_url: 'https://www.youtube.com/watch?v=xszR1QdpxAw', published: true },
+  { title: 'Bird’s Paradise 2 USA', category: 'bird', series: 'BIRD SERIES', players: '4–10 Players', summary: 'A vivid bird-themed multiplayer arcade experience with animated wildlife, fantasy characters, and configuration options for different commercial installations.', focus: 'Bird-themed experience', image: 'product-birds-paradise-2-usa.jpg', image_alt: 'Bird’s Paradise 2 USA bird-themed arcade gameplay', video_url: 'https://www.youtube.com/watch?v=PhQ-6z9Zpls', published: true },
+  { title: 'Insect Doctor', category: 'insect', series: 'INSECT SERIES', players: '4–10 Players', summary: 'An insect-themed multiplayer arcade system combining character-driven visuals, animated targets, and flexible integration for commercial amusement projects.', focus: 'Insect character system', image: 'product-insect-doctor.jpg', image_alt: 'Insect Doctor multiplayer insect-themed arcade gameplay', video_url: 'https://www.youtube.com/watch?v=j1zoUJPe0_c', published: true },
+  { title: 'Insect Pirates', category: 'insect', series: 'INSECT SERIES', players: '4–10 Players', summary: 'A pirate-inspired insect adventure designed for multiplayer arcade environments, with a distinctive cast and flexible venue configuration discussions.', focus: 'Pirate adventure theme', image: 'product-insect-pirates.jpg', image_alt: 'Insect Pirates arcade game title and character artwork', video_url: 'https://www.youtube.com/watch?v=onqQsLdvmpM', published: true }
 ];
 
 const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
@@ -10,11 +10,13 @@ const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, char => ({ '
 function renderProducts(products) {
   const grid = document.querySelector('#product-grid');
   const visible = products.filter(product => product.published !== false);
-  grid.innerHTML = visible.map((product, index) => {
+  grid.innerHTML = visible.map(product => {
     const inquiry = `contact.html?product=${encodeURIComponent(product.title)}`;
+    const image = product.image ? `<img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.image_alt || `${product.title} product photo`)}" loading="lazy">` : '<div class="product-photo-missing">Product photo pending</div>';
+    const video = product.video_url ? `<a class="product-video" href="${escapeHtml(product.video_url)}" target="_blank" rel="noopener noreferrer" aria-label="Watch ${escapeHtml(product.title)} gameplay on YouTube">Watch gameplay on YouTube ↗</a>` : '';
     return `<article class="product-card product-${escapeHtml(product.category)} reveal visible" data-category="${escapeHtml(product.category)}">
-      <div class="product-visual" aria-hidden="true"><span>${String(index + 1).padStart(2, '0')}</span><i></i><b>${escapeHtml(product.category).slice(0, 2).toUpperCase()}</b></div>
-      <div class="product-info"><p>${escapeHtml(product.series)}</p><h3>${escapeHtml(product.title)}</h3><div class="product-tags"><span>${escapeHtml(product.players)}</span><span>${escapeHtml(product.focus || 'Project inquiry')}</span></div><p class="product-summary">${escapeHtml(product.summary || '')}</p><a href="${inquiry}">Discuss this system ↗</a></div>
+      <div class="product-visual">${image}</div>
+      <div class="product-info"><p>${escapeHtml(product.series)}</p><h3>${escapeHtml(product.title)}</h3><div class="product-tags"><span>${escapeHtml(product.players)}</span><span>${escapeHtml(product.focus || 'Project inquiry')}</span></div><p class="product-summary">${escapeHtml(product.summary || '')}</p><div class="product-actions"><a href="${inquiry}">Discuss this system ↗</a>${video}</div></div>
     </article>`;
   }).join('');
 }

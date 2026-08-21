@@ -4,8 +4,11 @@
     "category": "fish",
     "series": "FISH SERIES",
     "players": "2–10 Players",
-    "summary": "An ocean-themed multi-player system for early-stage product and venue discussions.",
-    "focus": "Multi-player format",
+    "summary": "A fast-paced ocean-themed multiplayer arcade system featuring colorful marine targets, special effects, and configurable setups for commercial venue projects.",
+    "focus": "Ocean action system",
+    "image": "product-fatal-harpoon.jpg",
+    "image_alt": "Fatal Harpoon multiplayer ocean arcade gameplay",
+    "video_url": "https://www.youtube.com/watch?v=xszR1QdpxAw",
     "published": true
   },
   {
@@ -13,8 +16,11 @@
     "category": "bird",
     "series": "BIRD SERIES",
     "players": "4–10 Players",
-    "summary": "A bird-themed entertainment system presented for configuration and market inquiries.",
-    "focus": "Theme-led experience",
+    "summary": "A vivid bird-themed multiplayer arcade experience with animated wildlife, fantasy characters, and configuration options for different commercial installations.",
+    "focus": "Bird-themed experience",
+    "image": "product-birds-paradise-2-usa.jpg",
+    "image_alt": "Bird’s Paradise 2 USA bird-themed arcade gameplay",
+    "video_url": "https://www.youtube.com/watch?v=PhQ-6z9Zpls",
     "published": true
   },
   {
@@ -22,8 +28,11 @@
     "category": "insect",
     "series": "INSECT SERIES",
     "players": "4–10 Players",
-    "summary": "A character-driven insect theme for commercial amusement project conversations.",
-    "focus": "Character theme",
+    "summary": "An insect-themed multiplayer arcade system combining character-driven visuals, animated targets, and flexible integration for commercial amusement projects.",
+    "focus": "Insect character system",
+    "image": "product-insect-doctor.jpg",
+    "image_alt": "Insect Doctor multiplayer insect-themed arcade gameplay",
+    "video_url": "https://www.youtube.com/watch?v=j1zoUJPe0_c",
     "published": true
   },
   {
@@ -31,8 +40,11 @@
     "category": "insect",
     "series": "INSECT SERIES",
     "players": "4–10 Players",
-    "summary": "A multi-player insect adventure concept for venue and integration discussions.",
-    "focus": "Project configuration",
+    "summary": "A pirate-inspired insect adventure designed for multiplayer arcade environments, with a distinctive cast and flexible venue configuration discussions.",
+    "focus": "Pirate adventure theme",
+    "image": "product-insect-pirates.jpg",
+    "image_alt": "Insect Pirates arcade game title and character artwork",
+    "video_url": "https://www.youtube.com/watch?v=onqQsLdvmpM",
     "published": true
   }
 ]

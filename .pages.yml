@@ -1,0 +1,120 @@
+media:
+  input: media
+  output: /media
+
+content:
+  - name: site_settings
+    label: Site Settings
+    type: file
+    path: site.json
+    format: json
+    fields:
+      - name: site_name
+        label: Browser title and public display name
+        type: string
+        required: true
+      - name: display_name
+        label: Short name shown in the website header
+        type: string
+        required: true
+      - name: role
+        label: Professional role
+        type: string
+        required: true
+      - name: hero_title_line_1
+        label: Hero title - line 1
+        type: string
+        required: true
+      - name: hero_title_line_2
+        label: Hero title - line 2
+        type: string
+        required: true
+      - name: hero_intro
+        label: Hero introduction
+        type: text
+        required: true
+      - name: hero_product
+        label: Featured product name
+        type: string
+      - name: hero_image
+        label: Featured product image
+        type: image
+        description: Use a full https image URL or an uploaded /media path.
+      - name: contact_intro
+        label: Contact introduction
+        type: text
+      - name: contact
+        label: Personal contact details
+        type: object
+        fields:
+          - name: publish_contact
+            label: Publish contact details
+            type: boolean
+            description: Keep this OFF until every field has been confirmed by the site owner.
+          - name: email
+            label: Public email
+            type: string
+          - name: whatsapp_display
+            label: WhatsApp display number
+            type: string
+          - name: whatsapp_number
+            label: WhatsApp international number without + or spaces
+            type: string
+          - name: line
+            label: LINE ID
+            type: string
+          - name: wechat
+            label: WeChat ID
+            type: string
+          - name: telegram
+            label: Telegram username
+            type: string
+          - name: location
+            label: Public location or time zone
+            type: string
+          - name: cta_label
+            label: Contact button label
+            type: string
+          - name: form_endpoint
+            label: Form submission endpoint
+            type: string
+            description: Current free endpoint sends inquiries to the public email through FormSubmit.
+      - name: disclaimer
+        label: Independence and compliance disclaimer
+        type: text
+        required: true
+
+  - name: products
+    label: Products
+    type: file
+    path: products.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Product title
+        type: string
+        required: true
+      - name: category
+        label: Category
+        type: select
+        required: true
+        options:
+          values: [fish, bird, insect, hardware]
+      - name: series
+        label: Series label
+        type: string
+        required: true
+      - name: players
+        label: Player configuration
+        type: string
+      - name: image
+        label: Product image
+        type: image
+        description: Use a full https image URL or an uploaded /media path.
+      - name: url
+        label: Product detail URL
+        type: string
+      - name: published
+        label: Show on website
+        type: boolean

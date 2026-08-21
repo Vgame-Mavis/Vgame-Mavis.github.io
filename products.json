@@ -1,6 +1,38 @@
 [
-  {"title":"Fatal Harpoon","category":"fish","series":"FISH SERIES","players":"2–10 Players","image":"https://www.vgamesystem.com/wp-content/uploads/Fish_Series/VGAME-Fatal-Harpoon_logo-1.png","url":"https://www.vgamesystem.com/fatal-harpoon/","published":true},
-  {"title":"Bird’s Paradise 2 USA","category":"bird","series":"BIRD SERIES","players":"4–10 Players","image":"https://www.vgamesystem.com/wp-content/uploads/Bird_Series/VGAME-Birds-Paradise-2-USA-LOGO.png","url":"https://www.vgamesystem.com/birds-paradise-2-usa/","published":true},
-  {"title":"Insect Doctor","category":"insect","series":"INSECT SERIES","players":"4–10 Players","image":"https://www.vgamesystem.com/wp-content/uploads/Bird_Series/VGAME-Insect-Doctor_logo-768x554-1.png","url":"https://www.vgamesystem.com/insect-doctor/","published":true},
-  {"title":"Insect Pirates","category":"insect","series":"INSECT SERIES","players":"4–10 Players","image":"https://www.vgamesystem.com/wp-content/uploads/Bird_Series/Fish-Game_Insect-Pirates_VGAME_500.png","url":"https://www.vgamesystem.com/insect-pirates/","published":true}
+  {
+    "title": "Fatal Harpoon",
+    "category": "fish",
+    "series": "FISH SERIES",
+    "players": "2–10 Players",
+    "summary": "An ocean-themed multi-player system for early-stage product and venue discussions.",
+    "focus": "Multi-player format",
+    "published": true
+  },
+  {
+    "title": "Bird’s Paradise 2 USA",
+    "category": "bird",
+    "series": "BIRD SERIES",
+    "players": "4–10 Players",
+    "summary": "A bird-themed entertainment system presented for configuration and market inquiries.",
+    "focus": "Theme-led experience",
+    "published": true
+  },
+  {
+    "title": "Insect Doctor",
+    "category": "insect",
+    "series": "INSECT SERIES",
+    "players": "4–10 Players",
+    "summary": "A character-driven insect theme for commercial amusement project conversations.",
+    "focus": "Character theme",
+    "published": true
+  },
+  {
+    "title": "Insect Pirates",
+    "category": "insect",
+    "series": "INSECT SERIES",
+    "players": "4–10 Players",
+    "summary": "A multi-player insect adventure concept for venue and integration discussions.",
+    "focus": "Project configuration",
+    "published": true
+  }
 ]

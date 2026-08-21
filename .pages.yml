@@ -33,13 +33,6 @@ content:
         label: Hero introduction
         type: text
         required: true
-      - name: hero_product
-        label: Featured product name
-        type: string
-      - name: hero_image
-        label: Featured product image
-        type: string
-        description: Paste a full https image URL or an uploaded /media path.
       - name: contact_intro
         label: Contact introduction
         type: text
@@ -108,12 +101,12 @@ content:
       - name: players
         label: Player configuration
         type: string
-      - name: image
-        label: Product image
-        type: string
-        description: Paste a full https image URL or an uploaded /media path.
-      - name: url
-        label: Product detail URL
+      - name: summary
+        label: Product introduction
+        type: text
+        required: true
+      - name: focus
+        label: Product focus tag
         type: string
       - name: published
         label: Show on website

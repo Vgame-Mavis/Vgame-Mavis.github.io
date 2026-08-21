@@ -7,7 +7,7 @@ English-only static website for private product introductions and client communi
 - Frontend hosting: GitHub Pages (free for a public repository on GitHub Free).
 - Content management: Pages CMS hosted app (free and open source).
 - Sign-in: the repository owner's GitHub account.
-- Editable content: site name, professional role, hero copy, featured image, products, product visibility, personal contact details and form delivery endpoint.
+- Editable content: site name, professional role, hero copy, products, product visibility, personal contact details and form delivery endpoint.
 
 ## Safety for personal contact information
 
@@ -33,13 +33,13 @@ Run any static file server in this folder, then open its local address. Fetch-ba
 
 The selected GitHub identity is `Vgame-Mavis`. See `GITHUB-PAGES-SETUP.md` for the exact repository name and publishing checklist.
 
-## Sources
+## External product links
 
-- VGAME official website: https://www.vgame.com.tw/
-- VGAME Alibaba storefront: https://v-game.en.alibaba.com/
+- Product marketplace: https://v-game.en.alibaba.com/
+- A YouTube channel or video may be added only after its exact URL is confirmed by the owner.
 - Pages CMS documentation: https://pagescms.org/docs/
 - GitHub Pages documentation: https://docs.github.com/pages
 
 ## Media note
 
-The first draft references publicly accessible VGAME image URLs. Before broad publication, replace them with approved local media to avoid broken images if the source site changes and to confirm image-use permission.
+The public pages use original CSS-based graphics and do not load images or product links from other VGAME websites. Product buttons lead to this website's own inquiry form. External product links are limited to Alibaba.com and a future owner-approved YouTube URL.

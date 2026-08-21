@@ -33,3 +33,19 @@ fetch('site.json').then(response => response.json()).then(settings => {
     document.querySelector('#direct-telegram strong').textContent = contact.telegram;
   }
 }).catch(() => {});
+
+const selectedProduct = new URLSearchParams(location.search).get('product');
+if (selectedProduct) {
+  const subject = document.querySelector('#subject');
+  const message = document.querySelector('#message');
+  const productSelect = document.querySelector('#product');
+  if (subject) subject.value = `Inquiry about ${selectedProduct}`;
+  if (message) message.value = `I would like to discuss ${selectedProduct}.\n\nMarket / country:\nVenue or project type:\nPlayer configuration:\nEstimated quantity:\nTarget schedule:\nOther requirements:`;
+  if (productSelect) {
+    const option = document.createElement('option');
+    option.value = selectedProduct;
+    option.textContent = selectedProduct;
+    option.selected = true;
+    productSelect.append(option);
+  }
+}

@@ -2,11 +2,9 @@
   "site_name": "VGAME Portfolio by Mavis | Taiwan Global Sales",
   "display_name": "VGAME BY MAVIS",
   "role": "Global Sales Specialist for a Taiwan-Based Company",
-  "hero_title_line_1": "BUILD THE",
-  "hero_title_line_2": "NEXT PLAY",
-  "hero_intro": "A focused selection of VGAME commercial amusement systems, game boards and multi-player solutions for private client introductions and project discussions.",
-  "hero_product": "INSECT PIRATES",
-  "hero_image": "https://www.vgamesystem.com/wp-content/uploads/Bird_Series/Fish-Game_Insect-Pirates_VGAME_500.png",
+  "hero_title_line_1": "CLEAR PRODUCT",
+  "hero_title_line_2": "CONVERSATIONS.",
+  "hero_intro": "A direct, structured way for international buyers to discuss commercial amusement systems, configurations and project requirements with a Taiwan-based sales contact.",
   "contact_intro": "Share your market, product interest and project requirements. Mavis will follow up directly.",
   "contact": {
     "publish_contact": true,
@@ -20,5 +18,5 @@
     "cta_label": "Contact Us",
     "form_endpoint": "https://formsubmit.co/vgame.mvs@gmail.com"
   },
-  "disclaimer": "Independent presentation for private client communication. This is not the official VGAME corporate website. Product information is referenced from VGAME’s official website and Alibaba storefront. Availability and configuration must comply with destination-market laws and venue requirements."
+  "disclaimer": "Independent sales portfolio for direct client communication. Product availability, specifications and compliance requirements must be confirmed for each destination market and project."
 }
